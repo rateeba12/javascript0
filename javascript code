@@ -1,0 +1,36 @@
+//var age = prompt("what is your age?");
+//document.getElementById('div').innerHTML= age ;
+/*function name(){
+var name = prompt("what is your name?");
+var result = "hello"+' '+name
+document.getElementById('div').innerHTML= result;
+
+}
+name();
+
+function sum(a,b){
+	var result=a+b;
+	console.log(result);
+}
+sum('rateeba'+' sawalha')
+num=0;
+while (num <3){
+	num+=1;
+	console.log(num);
+}*/
+
+//Challeng 1: Your age in days
+
+function ageindays(){
+
+	var brithyear=prompt("what year were you born?");
+var ageindayss=(2021-brithyear)* 365;
+var h1 = document.createElement('h1')
+var texanswer = document.createTextNode('you are '+ ageindayss +' days old ')
+h1.setAttribute('id', 'ageindays');
+h1.appendChild(texanswer);
+document.getElementById('flex-box-result').appendChild(h1);
+}
+function reset(){
+	document.getElementById('ageindays').remove();
+}
